@@ -3,6 +3,24 @@ const container = document.querySelector(".container");
 const section = document.createElement("section")
 const para = document.createElement("p");
 
+btn.addEventListener('click' , function(){
+section.textContent = "";
+const inputVal = document.querySelector('#disciples').value 
+const inputValue = inputVal.toLowerCase();
+const reversal = myFunction(inputValue);
+
+if (inputValue === reversal){
+displayMessage(`${inputVal} is a palindrome`)
+}
+else if(!(inputValue === reversal)) {
+displayMessage(`${inputVal} is not a palindrome`)
+}
+else if (inputValue = ""){
+alert("Please type in any word")
+}
+});
+
+
 function myFunction(reverse){
     let string = '';
     let i;
@@ -13,21 +31,6 @@ function myFunction(reverse){
 }
 
 
-btn.addEventListener('click' , function(){
-section.textContent = "";
-const inputValue = document.querySelector('#disciples').value 
-const reversal = myFunction(inputValue)
-
-if (inputValue === reversal){
-displayMessage(`${inputValue} is a palindrome`)
-}
-else if(!(inputValue === reversal)) {
-displayMessage(`${inputValue} is not a palindrome`)
-}
-else if (inputValue = ""){
-alert("Please type in any word")
-}
-})
 
 function displayMessage(text){
 
