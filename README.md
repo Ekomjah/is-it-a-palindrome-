@@ -14,11 +14,12 @@ A simple and interactive web app that lets users check whether a given word, phr
 ---
 
 ## 📁 Project Structure
-
+```
 is-it-a-palindrome-/
 ├── index.html # The main HTML file
 ├── style.css # Basic styles for the page
 └── script.js # Palindrome checking logic
+```
 
 
 ---
@@ -45,9 +46,9 @@ The core logic uses JavaScript to:
 
 
 
-🛠️ Tech Stack
-HTML5
+## 🛠️ Tech Stack
+- HTML5
 
-CSS3
+- CSS3
 
-JavaScript (Vanilla)
+- JavaScript (Vanilla)
